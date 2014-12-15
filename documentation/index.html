@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+
+		<!-- Meta -->
+		<meta charset="UTF-8">
+		<title>Distinctive Themes | Smash Documentation</title>
+		<meta name="keywords" content="DistinctPress, Documentation">
+		<meta name="description" content="DistinctPress - Documentation">
+		<meta name="author" content="Dan">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="assets/favicon.ico">
+		<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/reset.css">
+		<link rel="stylesheet" href="assets/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/shCore.css">
+		<link rel="stylesheet" href="assets/shThemeDefault.css">
+		<link rel="stylesheet" href="assets/style.css">
+
+	</head>
+
+	<body>
+
+
+		<!-- Menu -->
+		<div id="doc-menu">
+			<!-- Header -->
+			<div id="header">
+				<h1>Smash Documentation</h1>
+			</div>
+			<ul class="nav">
+				<li class="section active"><span>1</span><a href="#s1">Introduction</a></li>
+				<li class="section"><span>2</span><a href="#s2">Editing The Template</a></li>
+				<li><span>2.1</span><a href="#s2e1">Heading</a></li>
+				<li><span>2.2</span><a href="#s2e2">Navigation</a></li>
+				<li><span>2.3</span><a href="#s2e3">Animating Items</a></li>
+				<li class="section"><span>3</span><a href="#s3">Setting Up Scripts</a></li>
+				<li><span>3.1</span><a href="#s3e1">Map</a></li>
+				<li><span>3.2</span><a href="#s3e2">Home Background Slider</a></li>
+				<li><span>3.3</span><a href="#s3e3">Contact Form</a></li>
+				<li class="section"><span>4</span><a href="#s4">Template Files</a></li>
+				<li class="section"><span>4</span><a href="#s5">Support</a></li>
+			</ul>
+		</div>
+
+		<!-- Content -->
+		<div id="doc-content" data-spy="scroll" data-target="#menu">
+
+			<div id="intro">
+				<div class="vertical">
+					<h1>Smash Documentation <span>v1.0</span></h1>
+					<h2>Thank you for purchasing our theme.</h2>
+				</div>
+			</div>
+
+<!-- ===================================================================================-->
+<!-- 1 Introduction
+ -->
+<!-- ===================================================================================-->
+
+<h1 id="s1"><span>1</span>Introduction</h1>
+<p>Hi there! Thanks for using my theme, Smash. This documentation assumes you have at least a basic familiarity of how HTML Websites work - you will need to basically FTP the files to your web hosts tp get started.</p>
+
+<!-- ===================================================================================-->
+<!-- 2 Settings
+ -->
+<!-- ===================================================================================-->
+
+<h1 id="s2"><span>2</span>Editing The Template</h1>
+<p>Each Sections folows a similar HTML layout, and can be easily edited to suit your needs. The best resource for really getting to grips would be the boostrap documentation (on which this template is based) - <a href="http://getbootstrap.com/css/" target="_blank">View Bootstrap Docs</a></p>
+
+<h2 id="s2e1"><span>2.1</span>Heading</h2>
+<p>The heading logo can be either text or an image - an example text logo is is below. You will find the heading towards the top of the documents, within the div class 'navbar'.</p>
+<img src="assets/headerlogo.jpg" class="img-responsive"/>
+<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+<a class="navbar-brand" href="index.html">Smash</a>
+]]></script>
+<p>Or an image</p>
+<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+<a class="navbar-brand" href="index.html"><img src="your/url" alt="Logo" /></a>
+]]></script>
+
+<h2 id="s2e2"><span>2.2</span>Navigation</h2>
+<p>The navigation is very simple to use, for the single page varion, you simply need to supply the id of the section your wish to scroll to</p>
+
+<p>The menu can use icons if you wish, the genral scaffolding is outlined below</p>
+<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+           <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Home <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="index.html">Home Full</a></li>
+                            <li><a href="index-video.html">Home Video</a></li>
+                            <li><a href="index-onepager.html">Home One Pager</a></li>
+                            <li><a href="index-coming-soon.html">Home Coming Soon</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Pages <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="404.html">404</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#search"><i class="pe-7s-search"></i></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+]]></script>
+
+<h2 id="s2e3"><span>2.3</span>Animating Items</h2>
+<p>In Smash you have several classes you can simply add to any applicible element to make them fade in etc when they enter the screen, the classes are available to view here <a href="http://daneden.github.io/animate.css/">CLICK TO VIEW ANIMATE.CSS SITE</a> - just add these to an element and your good to go. Be sure to always include the class <strong>wow</strong> before adding any animations, this ensures the items dont animate untill they are on the screen.</p>
+
+
+<!-- ===================================================================================-->
+<!-- 3 Scripts
+ -->
+<!-- ===================================================================================-->
+
+<h1 id="s3"><span>3</span>Setting Up The Scripts</h1>
+
+<h2 id="s3e1"><span>3.1</span>Map</h2>
+<p>In the index.html file, locate the following code in the head of the document. Here you can tweak the map to show your location by simply entering the relevant logitude and latitude. To find your logitude and latitude you can use the following handy website - <a href="http://stevemorse.org/jcal/latlon.php">Convert Address.</a></p>
+<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+$("#mapwrapper").gMap({ 
+	controls: false,
+	scrollwheel: false,
+	draggable: false,
+	latitude:40.7566,
+	longitude: -73.9863,
+	zoom: 11
+});
+]]></script>
+
+<h2 id="s3e2"><span>3.2</span>Editing/Adding Background Images</h2>
+<p>in the plugin assets/js/init look for the following code to edit/add more slides</p>
+<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+$('#headerwrapper').backstretch([
+    "assets/img/bg/bg1.jpg"
+  , "assets/img/bg/bg2.jpg"
+  , "assets/img/bg/bg3.jpg"
+], {duration: 3000, fade: 750});
+]]></script>
+
+<h2 id="s3e3"><span>3.3</span>Contact Form</h2>
+<p>within the main template folder you will find a fill called sendemail.php - locate the following line and edit it to suit.</p>
+<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+//ENTER YOUR EMAIL ADDRESS HERE
+$address = 'email@example.com';
+]]></script>
+
+
+<!-- ===================================================================================-->
+<!-- 4 Template
+ -->
+<!-- ===================================================================================-->
+
+<h1 id="s4"><span>4</span>Template Files</h1>
+<h2 id="s4e1"><span>4.1</span>Single Project</h2>
+<p>The single projects featued a full screen slideshow which can be linked to a set of titles for navigation to set this up, you will need to add any backgground images via the following code found in the head of single-projct.html</p>
+<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+<!-- Header -->
+<header id="headerwrap" class="fullheight">       
+    <div class="carousel slide article-slide carousel-fade fullheight" id="article-photo-carousel">             
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner cont-slider">
+            <div class="item active">
+                <img class="img-resposive" alt="" title="" src="assets/img/portfolio/portfolio4.jpg">
+                <div class="carousel-caption">
+                    <h2>Single Portfolio Gallery</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-resposive" alt="" title="" src="assets/img/portfolio/portfolio5.jpg">
+                <div class="carousel-caption">
+                    <h2>Single Portfolio Gallery</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-resposive" alt="" title="" src="assets/img/portfolio/portfolio10.jpg">
+                <div class="carousel-caption">
+                    <h2>Single Portfolio Gallery</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-resposive" alt="" title="" src="assets/img/portfolio/portfolio3.jpg">
+                <div class="carousel-caption">
+                    <h2>Single Portfolio Gallery</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#article-photo-carousel">
+                <img alt="" src="assets/img/portfolio/portfolio4.jpg">
+            </li>
+            <li class="" data-slide-to="1" data-target="#article-photo-carousel">
+                <img alt="" src="assets/img/portfolio/portfolio5.jpg">
+            </li>
+            <li class="" data-slide-to="2" data-target="#article-photo-carousel">
+                <img alt="" src="assets/img/portfolio/portfolio10.jpg">
+            </li>
+            <li class="" data-slide-to="3" data-target="#article-photo-carousel">
+                <img alt="" src="assets/img/portfolio/portfolio3.jpg">
+            </li>
+        </ol>
+    </div>
+</header>
+]]></script>
+
+<h2 id="s4e2"><span>4.1</span>Single Project Video</h2>
+<p>within the single-project-video.html file you will find the following within the header of the template, simply replace the id with the ID of the youtube video you wish to use</p>
+<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+$('#headerwrapper').tubular({ 
+	videoId: 'bUiJbraHRk4',
+	start: 5
+});
+]]></script>
+
+<!-- ===================================================================================-->
+<!-- 5 Support
+ -->
+<!-- ===================================================================================-->
+
+<h1 id="s4"><span>4</span>Support</h1>
+<p>I am always happy to help - so if you have any issues or perhaps even a suggestion for a new feature to include, then head over to our <a href="http://www.distinctivethemes.com/forum/" target="_blank">support forum</a></p>
+
+<p>
+I run support 
+<strong>Weekdays 9am - 5pm GMT</strong>. You can expect a response within <strong>12&nbsp;- 48 hours, Monday to Friday</strong>&nbsp;unless there is a national holiday. Here is a list of UK national holidays:&nbsp;<a href="https://www.gov.uk/bank-holidays">https://www.gov.uk/bank-holidays</a>. Note that "bumps" to tickets put you to the back of my queue, be patient, every ticket is answered promptly.
+</p>
+
+<p>
+<strong>What my tickets are for:</strong>&nbsp;
+</p>
+<p>
+Help using theme features, Help  setting up / installing themes, bug reports &amp; reasonable feature requests for future updates.
+</p>
+<p>
+<strong>What my tickets aren't for:</strong>&nbsp;
+</p>
+<p>
+Any issues relating to 3rd party plugins not recommended by the theme, theme customisations, or theme changes your client requires.
+</p>
+<p>
+<strong>What counts as customisation?</strong>&nbsp;
+</p>
+<p>
+If you want to change the appearance or functionality of the theme by editing or extending the theme's code, then that is customisation, and will not be supported through my tickets. Likewise if your client has a function request that does not exist in the theme, my tickets are not the place to have the theme extended for this.
+</p>
+<p>
+<strong>Do you need customisation work?</strong>&nbsp;
+</p>
+<p>
+If that's exactly what you're here for, you can fill out a custom work form here; 
+<a href="http://www.distinctivethemes.com/customizations/">http://www.distinctivethemes.com/customizations/</a>
+</p>
+<p>
+<strong>Things to check when leaving a ticket:</strong>&nbsp;
+</p>
+<ol>
+<li><strong>You must leave a link to your site</strong>, if not we will ask you to do this anyway and it will result in a delay to your ticket.</li>
+<li>Please be descriptive when leaving a ticket, use screenshots if possible, "doesn't work" is not an acceptable descriptive term.</li>
+<li>Before opening a ticket, <strong>disable all non-theme-recommended plugins</strong>, <strong>undo any code changes</strong>, and ensure you're using a default, unmodified version of the theme files. You'll find a lot of the time this fixes your issue.</li>
+<li>Tickets without a validated purchase will not be answered. Properly validate your purchase.</li>
+<li>If you have a modified theme, or are using a child theme for modification, we cannot help with bugs. Please present bugs to us within the <strong>default</strong>, <strong>unmodified theme</strong>, and we will help every time!</li>
+<li>Please note Envato's Licensing covers 1 URL per 1 purchase of a theme:&nbsp;<a href="http://themeforest.net/licenses/regular">http://themeforest.net/licenses/regular</a> - ticket profiles covering multiple URLs with 1 license code, will be stopped until the remaining licenses are provided.</li>
+</ol>
+
+<p>
+<em>A quick point on theme support</em>: All of my themes are tested and thoroughly scrutinised by themeforest support staff and are <strong>confirmed 100% working</strong>, if you're having any issues you should be 99.9% sure it's a user error, or a bug I will be happy to fix with you. With this in mind, please keep your tone calm &amp; professional, you will always get the same from me. Any tickets left with vulgar language, or with threatening, unprofessional language will be promptly closed and/or deleted. All tickets left with a calm, professional tone will receive awesome support, as always.
+</p>
+
+<p>
+<a href="http://www.distinctivethemes.com/forum/">If you've read, accepted, and followed the steps above, click here to leave a ticket.</a>
+</p>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="newprojects" tabindex="-1" role="dialog" aria-labelledby="newprojectsLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="newprojectsLabel">Adding New Projects</h4>
+      </div>
+      <div class="modal-body">
+        <img src="assets/projects.jpg" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="shortcodesvid" tabindex="-1" role="dialog" aria-labelledby="shortcodesvidLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="shortcodesvidLabel">Shortcode Demo (from v1)</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="http://www.screenr.com/embed/C3CH" width="550" height="396" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<!-- JavaScripts -->
+		<script type='text/javascript' src='assets/jquery.min.js'></script>
+		<script type='text/javascript' src='assets/bootstrap.min.js'></script>
+		<script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+		<script type='text/javascript' src='assets/jquery.localscroll-1.2.7-min.js'></script>
+		<script type='text/javascript' src='assets/shCore.js'></script>
+		<script type='text/javascript' src='assets/shBrushPhp.js'></script>
+		<script type='text/javascript' src='assets/shBrushXML.js'></script>
+		<script type='text/javascript' src='assets/shBrushJScript.js'></script>
+		<script type='text/javascript' src='assets/shBrushCss.js'></script>
+		<script type='text/javascript' src='assets/custom.js'></script>
+
+	</body>
+</html>
